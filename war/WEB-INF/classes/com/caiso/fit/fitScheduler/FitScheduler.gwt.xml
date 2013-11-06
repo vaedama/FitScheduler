@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='fitscheduler'>
+  
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <inherits name="javax.validation.Validation"/>
+  <inherits name='com.extjs.gxt.ui.GXT' />
+  <inherits name='com.caiso.fit.fitScheduler.FitScheduler'/>
+  
+  <entry-point class='com.caiso.fit.fitScheduler.client.FitSchedulerEntryPoint'/>
+
+  <!-- For development, a default of `DEBUG` is recommended -->
+  <inherits name="com.allen_sauer.gwt.log.gwt-log-DEBUG" />
+  <!-- Enable the remote logging option (disabled by default) -->
+  <inherits name="com.allen_sauer.gwt.log.gwt-log-RemoteLogger" />
+
+  <!--  Compiling to run only on Chrome -->
+  <set-property name="user.agent" value="safari"/>
+  
+  <!-- Include GWTUpload library -->
+ <inherits name="gwtupload.GWTUpload"/>
+ <!-- Load dynamically predefined styles in the library when the app starts -->
+ <stylesheet src="Upload.css"/>
+ 
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+  
+</module>

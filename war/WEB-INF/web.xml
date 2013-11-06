@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- fitScheduler servlet -->
+  <servlet>
+    <servlet-name>fitSchedulerService</servlet-name>
+    <servlet-class>com.caiso.fit.fitScheduler.server.FitSchedulerServiceImpl</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <!-- remote logger servlet -->
+  <servlet>
+    <servlet-name>gwt-log-remote-logger-servlet</servlet-name>
+    <servlet-class>com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl</servlet-class>
+    
+    <init-param>
+      <param-name>symbolMaps</param-name>
+      <param-value>WEB-INF/deploy/fitscheduler/symbolMaps/</param-value>
+    </init-param>
+  </servlet>
+  
+  <!-- customized file upload servlet -->
+  <servlet>
+    <servlet-name>fileUploadServlet</servlet-name>
+    <servlet-class>com.caiso.fit.fitScheduler.server.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ruleScriptUploadServlet</servlet-name>
+    <servlet-class>com.caiso.fit.fitScheduler.server.RuleScriptUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>fitSchedulerService</servlet-name>
+    <url-pattern>/fitscheduler/fitSchedulerService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>gwt-log-remote-logger-servlet</servlet-name>
+    <url-pattern>/fitscheduler/gwt-log</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>fileUploadServlet</servlet-name>
+    <url-pattern>*.fileUpload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ruleScriptUploadServlet</servlet-name>
+    <url-pattern>*.scriptUpload</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>FitScheduler.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

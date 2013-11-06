@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/groovy-all-1.8.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-servlet-deps.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtupload-0.6.3-compat.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gxt-2.2.5-gwt22.jar"/>
+	<classpathentry kind="lib" path="C:/DEVELOPMENT/gwt-2.4.0/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/DEVELOPMENT/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-log-3.1.7.jar"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,3 @@
+# Module fitscheduler
+# RPC service class, partial path of RPC policy file
+com.caiso.fit.fitScheduler.shared.FitSchedulerService, 8805480B0371884381668E9EEFA46EEF.gwt.rpc

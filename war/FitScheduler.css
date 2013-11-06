@@ -1,0 +1,24 @@
+.rootPanel {
+  background-image : url('resources/images/rootPanel.jpg');
+}
+
+.headingName {
+  text-align: center;
+  size: 14px;
+  font: bold;
+  font-family: sans-serif;
+}
+
+.toolbarButtons {
+	background-position: -5px, -5px;
+}
+
+.wizardHeader {
+  background-color:white;
+}
+
+.wizardHeaderTitle {
+  font-weight: bold;
+  font-size: 11px;
+  padding: 4px 0px 0px 4px;
+}

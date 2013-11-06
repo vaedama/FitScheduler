@@ -1,0 +1,2 @@
+serviceClass: com.caiso.fit.fitScheduler.shared.FitSchedulerService
+path: 8805480B0371884381668E9EEFA46EEF.gwt.rpc
